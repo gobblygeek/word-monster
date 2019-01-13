@@ -1,0 +1,81 @@
+$main-primary: #14928b;
+$main-secondary: #ff9b6d;
+$theme-colors: ("primary": $main-primary,
+"secondary": $main-secondary);
+$font-family-serif: 'Noticia Text',
+Times,
+serif !default;
+
+footer.card {
+    flex-direction: row;
+    border-radius: 0;
+
+    .card-body {
+        color: white;
+    }
+}
+
+.row.justify-center {
+    justify-content: center;
+}
+
+.oldPaper,
+.homeTown {
+    margin-top: 3em;
+    padding: 1em;
+    background-image: url(images/oldPaper_sm.jpg);
+    background-position: center;
+    font-weight: bold;
+    background-size: cover;
+}
+
+.homeTown {
+    background-image: url(images/derevenka.jpg);
+
+    .card {
+        background-color: none;
+        background: rgba(255, 255, 255, 0.9);
+
+        .card-footer form {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#WriteForm {
+    img {
+        height: 150px
+    }
+}
+
+#MonsterModal {
+    .modal-dialog {
+        max-width: 70vw
+    }
+
+    .modal-body {
+        figure {
+            text-align: center;
+
+            img {
+                height: 250px
+            }
+        }
+    }
+}
+
+html body {
+    font-family: $font-family-serif;
+}
+
+.navbar-dark #navbarToggle .navbar-nav .nav-link.active {
+    color: $main-primary
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
